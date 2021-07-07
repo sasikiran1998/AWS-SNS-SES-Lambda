@@ -10,7 +10,7 @@ exports.handler = function(event, context) {
     var params = {
         Message: eventText, 
         Subject: "Test SNS From Lambda",
-        TopicArn: "arn:aws:sns:ap-south-1:873102235883:new_sns"
+        TopicArn: "<Topic ARN>"
     };
     sns.publish(params, context.done);
 };
